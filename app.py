@@ -38,7 +38,7 @@ dpf_option = st.selectbox(
         "Tidak ada riwayat diabetes",
         "Satu anggota keluarga",
         "Lebih dari satu keluarga",
-        "3+ anggota keluarga memiliki diabetes)"
+        "3+ anggota keluarga memiliki diabetes"
     ]
 )
 st.caption("pilih salah satu")
@@ -46,9 +46,9 @@ st.caption("pilih salah satu")
 # Mapping DPF
 dpf_mapping = {
     "Tidak ada riwayat diabetes": 0.2,
-    "Satu orang tua / satu anggota keluarga": 0.5,
-    "Dua orang tua / lebih dari satu keluarga": 0.8,
-    "Kuat (3+ anggota keluarga memiliki diabetes)": 1.5
+    "Satu anggota keluarga": 0.5,
+    "Lebih dari satu keluarga": 0.8,
+    "3+ anggota keluarga memiliki diabetes": 1.5
 }
 dpf = dpf_mapping[dpf_option]
 
